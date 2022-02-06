@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap rel="stylesheet"');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif;
+}
+
+body {
+  background-image: url(../img/preto2og.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.fotoredonda img {
+  margin-top: -20%;
+}
+
+.menuh {
+  margin-left: 48%;
+}
+
+.menuh button {
+  margin-top: 4%;
+  border: #ff0000;
+  width: 120px;
+  padding: 15px 15px;
+  outline: none;
+  background-color: #ff0000;
+  border-radius: 6px;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  transition: width 0.8s;
+  box-shadow: 10px 10px rgba(255, 0, 0, 0.5);
+}
+
+.menuh button img {
+  width: 20%;
+  display: none;
+}
+
+.menuh button:hover img {
+  display: block;
+}
+
+.menuh button:hover {
+  width: 22%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuh button a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+}
+
+@media only screen and (max-device-width: 736px) {
+  body {
+    background-image: url(../img/mobilepreot2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .fotoredonda {
+    margin-top: -75%;
+    margin-left: 3%;
+  }
+
+  .fotoredonda img {
+    width: 40%;
+    height: 35%;
+  }
+
+  .menuh button {
+    margin-top: 12%;
+    margin-bottom: 15%;
+  }
+
+  .menuh button img {
+    width: 20%;
+    display: none;
+  }
+  
+  .menuh button:hover img {
+    display: block;
+  }
+  
+  .menuh button:hover {
+    width: 82%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}

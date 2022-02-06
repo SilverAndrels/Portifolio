@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap rel="stylesheet"');
+
+* {
+    font-family: 'EB Garamond', serif;
+}
+
+body {
+    padding: 50px 50px 50px 50px;
+    border: 2px solid #ff0000;
+    border-radius: 6px;
+    background-color: #000000;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    color: #ff0000;
+    font-size: 24px;
+}
+
+h2 {
+    color: #c8c8c8;
+    font-size: 20px;
+}
+
+#sublinhar {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.first h2 a {
+    color: #ff0000;
+}
+
+.button button {
+    border: #ff0000;
+    margin-top: 30px;
+    margin-left: 30%;
+}
+
+.button2 button {
+    border: #ff0000;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.button button {
+    border: 5px 5px #ff0000;
+    background-color: #ff0000;
+    width: 120px;
+    height: 40px;
+    margin-left: 46%;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    transition: width 0.8s;
+    box-shadow: 10px 10px rgba(255, 0, 0, 0.5);
+}
+
+.button button img {
+    width: 20%;
+    display: none;
+}
+
+.button button:hover img {
+    display: block;
+}
+
+.button button:hover {
+    width: 13%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+@media only screen and (max-device-width: 740px) {
+
+    body {
+        border: none;
+    }
+
+    button {
+        text-align: center;
+    }
+
+    h1, h2 {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .button button {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    .button button img {
+        width: 20%;
+        display: none;
+    }
+
+    .button button:hover img {
+        display: block;
+    }
+
+    .button button:hover {
+        width: 50%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+}

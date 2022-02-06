@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap rel="stylesheet"');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+body {
+    background-image: url(../img/pretoog1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.txtarea {
+    padding: 1%;
+    width: 35%;
+    height: 55%;
+    border: solid 2px #ff0000;
+    border-radius: 0px 20px 0px 20px;
+    margin-top: -20%;
+    margin-left: 33%;
+    color: #c8c8c8;
+    font-size: 18px;
+}
+
+.txt #button {
+    text-align: center;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.txt button {
+    border: #ff0000;
+    width: 120px;
+    padding: 15px 15px;
+    outline: none;
+    background-color: #ff0000;
+    border-radius: 6px;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    transition: width 0.8s;
+    box-shadow: 10px 10px rgba(255, 0, 0, 0.5);
+}
+
+.txt button img {
+    width: 30px;
+    display: none;
+}
+
+.txt button:hover img {
+    display: block;
+}
+
+.txt button:hover {
+    width: 140px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt button a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+}
+
+@media only screen and (max-device-width: 736px) {
+    body {
+        background-image: url(../img/mobilepreto.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .txtarea {
+        width: 45%;
+        border: solid 1% #ff0000;
+        border-radius: 0px 10px 0px 10px;
+        margin-top: 20%;
+        color: #c8c8c8;
+        font-size: 16px;
+        margin-right: -50%;
+    }
+
+    .txt #button {
+        margin-left: 40%;
+        margin-top: 30%;
+    }
+}
